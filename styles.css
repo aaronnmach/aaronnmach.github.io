@@ -128,7 +128,7 @@ section {
 
 .image {
     float: right;
-    width: 200px;
+    width: 100px;
     /* Adjust the width as needed */
     height: auto;
     /* Maintain aspect ratio */
