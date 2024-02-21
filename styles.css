@@ -45,7 +45,7 @@ nav ul {
 
 nav ul li {
     display: inline;
-    margin-right: 20px;
+    margin-right: 10px;
 }
 
 /* Style for anchor tags in the navigation menu */
@@ -57,7 +57,7 @@ nav ul li a {
     position: relative;
     /* Required for positioning pseudo-element */
     /* Display as block for full width */
-    padding: 10px 20px;
+    padding: 10px 5px;
     /* Adjust padding as needed */
 }
 
@@ -127,7 +127,6 @@ section {
 }
 
 .image {
-    float: right;
     width: 200px;
     /* Adjust the width as needed */
     height: auto;
