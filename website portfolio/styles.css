@@ -1,0 +1,152 @@
+/* styles.css */
+
+/* Global styles */
+a {
+    color: #FFFFF0;
+    /* Change the color to blue */
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Bebas Neue', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #FFFFFF;
+    /* Off-White with adjusted brightness */
+    color: #333;
+    /* Dark gray text color for contrast */
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.86);
+    /* Pale Gray with adjusted brightness */
+    color: #333;
+    /* Dark gray text color for contrast */
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    color: #A29592;
+    text-transform: none;
+}
+
+p {
+    line-height: 2;
+    /* Double-spaced */
+}
+
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+/* Style for anchor tags in the navigation menu */
+nav ul li a {
+    text-decoration: none;
+    /* Remove default underline */
+    color: #A29592;
+    /* Set default color */
+    position: relative;
+    /* Required for positioning pseudo-element */
+    /* Display as block for full width */
+    padding: 10px 20px;
+    /* Adjust padding as needed */
+}
+
+/* Pseudo-element for creating the underline */
+nav ul li a::before {
+    content: '';
+    /* Required for pseudo-elements */
+    position: absolute;
+    bottom: -2px;
+    /* Adjust the distance from the text */
+    left: 0;
+    width: 0;
+    /* Initial width */
+    height: 2px;
+    /* Underline thickness */
+    background-color: #A29592;
+    /* Color of the underline */
+    transition: width 0.3s ease;
+    /* Smooth transition for width change */
+}
+
+/* Hover effect for anchor tags in the navigation menu */
+nav ul li a:hover::before {
+    width: 100%;
+    /* Full width on hover */
+}
+
+
+main {
+    padding: 20px;
+}
+
+footer {
+    background-color: #e0e0e0;
+    /* Pale Gray with adjusted brightness */
+    color: #333;
+    /* Dark gray text color for contrast */
+    text-align: center;
+    padding: 10px;
+
+}
+
+
+/* Page-specific styles */
+section {
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    /* Medium gray border */
+    background-color: #fff;
+    /* White background */
+}
+
+.larger-heading {
+    font-size: 2em;
+    /* Adjust the font size as needed */
+}
+
+.middle-dot {
+    margin: 0 5px;
+}
+
+.content {
+    float: left;
+    width: 70%;
+    /* Adjust the width as needed */
+}
+
+.image {
+    float: right;
+    width: 200px;
+    /* Adjust the width as needed */
+    height: auto;
+    /* Maintain aspect ratio */
+}
+
+.image1 {
+    width: 200px;
+    height: auto;
+    margin-right: 35px;
+}
+
+.image2 {
+    width: auto;
+    height: 250px;
+    /*margin-right: 30px;*/
+    margin-left: 30px;
+}
+
+.clearfix {
+    clear: both;
+}
