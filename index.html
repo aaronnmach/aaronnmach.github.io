@@ -15,28 +15,51 @@
         .custom-font {
             font-family: 'Times New Roman', Times, serif, sans-serif;
         }
+
+        body {
+            display: flex;
+            /* Remove flex-direction: column; to arrange items in a row */
+            min-height: 100vh;
+            margin: 0;
+            /* Remove default margin */
+        }
+
+        nav {
+            width: 100px;
+            background-color: #f2f2f2;
+            padding: 20px;
+        }
+
+        main {
+            flex-grow: 1;
+            padding: 20px;
+        }
     </style>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap">
     <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
-    <script src="script.js" defer></script> <!-- Link to your JavaScript file -->
 </head>
 
 <body>
 
     <header>
-        <h1 style="color: #A29592">Aaronn Mach</h1>
+        <h1 style="color: #A29592">A a r o n n <br> M a c h</h1>
+        <h2 style="color: #A29592"> Software <br>Engineer</h2>
         <nav>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="#about-me-section">About</a></li>
-                <li><a href="#portfolio-section">Portfolio</a></li>
-                <li><a href="#contact-section">Contact</a></li>
+                <li><a href="#home-section" onclick="toggleSectionVisibility('home-section')">Home</a></li>
+                <!-- <li><a href="#about-me-section">About</a></li> -->
+                <li><a href="#about-me-section" onclick="toggleSectionVisibility('about-me-section')">About</a></li>
+                <!-- <li><a href="#portfolio-section">Portfolio</a></li> -->
+                <li><a href="#portfolio-section" onclick="toggleSectionVisibility('portfolio-section')">Portfolio</a>
+                </li>
+                <!-- <li><a href="#contact-section">Contact</a></li> -->
+                <li><a href="#contact-section" onclick="toggleSectionVisibility('contact-section')">Contact</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <section>
+        <section id="home-section">
             <div class="content">
                 <h2 class="larger-heading">Welcome</h2>
                 <p class="custom-font">Hello and welcome! My name is Aaronn Mach, and I am an aspiring software engineer
@@ -49,7 +72,7 @@
                 <p>- &nbsp; Aaronn Mach</p>
             </div>
             <br><br><br><br><br><br><br><br><br><br><br><br>
-            <img src="images/aaronn.jpeg" alt="Image Description" class="image">
+            <img src="images/aaronnpfp.jpeg" alt="Image Description" class="image">
             <div class="clearfix"></div>
         </section>
         <section id="about-me-section">
@@ -112,10 +135,14 @@
         </section>
     </main>
 
-    <footer>
-        <p>A a r o n n &nbsp;M a c h <span class="middle-dot">&middot;</span> P o r t f o l i o</p>
+    <footer id="site-footer">
+        <p>A a r o n n <br>M a c h <br></span> P o r t f o l i o</p>
     </footer>
 
+    <!-- <button onclick="toggleFooterVisibility()">Toggle Footer</button> -->
+    <!-- Button to toggle footer visibility -->
+
+    <script src="script.js" defer></script> <!-- Link to your JavaScript file -->
 </body>
 
 </html>
