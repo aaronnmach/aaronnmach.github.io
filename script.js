@@ -38,3 +38,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
+// Clear the fragment identifier when the page is reloaded
+window.onload = function () {
+    history.replaceState({}, document.title, window.location.pathname);
+};
