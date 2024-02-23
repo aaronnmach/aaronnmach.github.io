@@ -126,6 +126,13 @@ section {
     /* White background */
 }
 
+/* styles.css or within <style> tags in your HTML */
+#contact-section ul li {
+    margin-bottom: 20px;
+    /* Adjust the margin as needed */
+}
+
+
 .larger-heading {
     font-size: 2em;
     /* Adjust the font size as needed */
