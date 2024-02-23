@@ -42,3 +42,24 @@ document.addEventListener('DOMContentLoaded', function () {
 window.onload = function () {
     history.replaceState({}, document.title, window.location.pathname);
 };
+
+// Function to adjust the margin-left of the main element
+function adjustMainMargin() {
+    var main = document.querySelector('main');
+    main.classList.toggle('main-hovered'); // Toggle the 'main-hovered' class
+}
+
+// Event listener for hover on the nav bar
+var nav = document.querySelector('nav');
+nav.addEventListener('mouseenter', function () {
+    // Adjust the margin-left of the main element when the nav bar is hovered over
+    adjustMainMargin();
+});
+
+nav.addEventListener('mouseleave', function () {
+    // Reset the margin-left of the main element when the mouse leaves the nav bar
+    adjustMainMargin();
+});
+
+
+
