@@ -54,7 +54,7 @@ p {
 }
 
 nav {
-    width: 100px;
+    width: 90px;
     background-color: #2c2c2c;
     position: fixed;
     top: 0;
@@ -181,6 +181,10 @@ section {
     /* Adjust the margin as needed */
 }
 
+#portfolio-section ul li {
+    margin-bottom: 20px;
+    /* Adjust the margin as needed */
+}
 
 .larger-heading {
     font-size: 2em;
