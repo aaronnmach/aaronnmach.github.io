@@ -1,0 +1,44 @@
+/* CSS specific to the about.html page */
+#about-me-section {
+    display: flex;
+    text-align: left;
+    font-weight: lighter;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    margin: 20px;
+    padding: 0;
+}
+
+#about-me-section h2 {
+    text-align: left;
+    font-size: 25px;
+    font-weight: lighter;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#about-me-section h2::after {
+    width: 17%;
+}
+
+.about-main {
+    margin-top: 40px;
+}
+
+
+#about-me-section {
+    display: flex;
+    text-align: left;
+    font-weight: lighter;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    margin: 20px;
+    padding: 0;
+}
+
+#about-me-section p {
+    font-size: 14px;
+    color: grey;
+}
