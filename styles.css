@@ -100,6 +100,7 @@ nav {
     transition: width 0.3s ease;
     margin-top: 40px;
     margin-right: 40px;
+    z-index: 999;
 }
 
 
@@ -171,7 +172,7 @@ section {
 }
 
 #projects-section h2::after {
-    width: 10%;
+    width: 4%;
 }
 
 #projects-setction {
@@ -204,11 +205,6 @@ section {
     /* Maintain aspect ratio */
     margin-top: 10px;
     /* Add some top margin */
-}
-
-#myImage {
-    width: 20px;
-    height: auto;
 }
 
 #home-section {
@@ -273,7 +269,7 @@ section {
 .container {
     width: 200px;
     overflow: hidden;
-    height: 200px;
+    height: 50px;
 }
 
 .project-main {
@@ -282,4 +278,32 @@ section {
 
 .about-main {
     margin-top: 40px;
+}
+
+.content-container {
+    padding-top: 60px;
+    overflow-y: auto;
+    height: 100vh;
+    box-sizing: border-box;
+}
+
+/* CSS for image wrapper */
+.image-wrapper {
+    position: relative;
+    display: inline-block;
+    margin-right: 10px;
+    /* Adjust margin to add space between images */
+}
+
+/* CSS for image */
+.image-wrapper img {
+    display: block;
+    width: 30px;
+    /* Adjust width as needed */
+    height: auto;
+    /* Maintain aspect ratio */
+    justify-content: center;
+    /* Optional: Center horizontally */
+    align-items: center;
+    /* Optional: Center vertically */
 }
