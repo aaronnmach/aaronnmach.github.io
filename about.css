@@ -18,7 +18,7 @@
 }
 
 #about-me-section h2::after {
-    width: 17%;
+    width: 9%;
 }
 
 .about-main {
@@ -40,12 +40,4 @@
 #about-me-section p {
     font-size: 14px;
     color: grey;
-}
-
-.home-icon {
-    position: fixed;
-    top: 20px;
-    left: 20px;
-    z-index: 1000;
-    /* Ensure it's above other elements */
 }
