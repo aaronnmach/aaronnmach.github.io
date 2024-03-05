@@ -195,7 +195,7 @@ section {
 .circular-border {
     width: 300px;
     height: auto;
-    border-radius: 80%;
+    border-radius: 40%;
     border: 1px solid rgb(103, 14, 123);
     margin-bottom: 20px;
 }
