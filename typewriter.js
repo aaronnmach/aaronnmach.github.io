@@ -37,7 +37,7 @@ function deleteText(text, i, element) {
 
 // Function to trigger the typewriter effect
 function startTypewriterEffect() {
-    var text = "cout << jobTitle;"; // Text to be typed
+    var text = "cout << occupation;"; // Text to be typed
     var i = 0;
     var element = document.getElementById("header-text"); // Get the header element
     typeWriter(text, i, element);
