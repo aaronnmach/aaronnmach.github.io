@@ -13,7 +13,7 @@ function typeWriter(text, i, element) {
 
 // Function to trigger the typewriter effect
 function startTypewriterEffect() {
-    var text = "Software Engineer, Student, Innovator"; // Text to be typed
+    var text = " Full-Stack Developer, Student"; // Text to be typed
     var i = 0;
     var element = document.getElementById("header-text"); // Get the header element
     typeWriter(text, i, element);
