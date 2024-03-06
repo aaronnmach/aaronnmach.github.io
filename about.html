@@ -14,9 +14,7 @@
 <nav>
     <ul>
         <li><a href="index.html">Home</a></li>
-        <!-- Update the href attribute to point to about.html -->
         <li><a href="about.html">About</a></li>
-        <!-- Update the href attribute to point to portfolio.html -->
         <li><a href="projects.html">Projects</a></li>
     </ul>
 </nav>
@@ -55,8 +53,47 @@
 
                     </p>
             </section>
+            <button id="scrollButton" onclick="scrollPage()">
+                <span>&#8595;</span>
+            </button>
+            <section id="skills">
+                <h2> Skills</h2>
+                <div class="skill-box">
+                    <h3>Front-end Development</h3>
+                    <p>HTML, CSS, JavaScript</p>
+                </div>
+                <div class="skill-box">
+                    <h3>Back-end Development</h3>
+                    <p>C++, Java</p>
+                </div>
+            </section>
         </main>
     </div>
+    <script>
+        window.addEventListener('scroll', function () {
+            var scrollButton = document.getElementById('scrollButton');
+            var scrollHeight = document.documentElement.scrollHeight;
+            var clientHeight = document.documentElement.clientHeight;
+            var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+
+            if (scrollTop === 0) {
+                scrollButton.style.display = 'block';
+            } else if (scrollHeight - scrollTop === clientHeight) {
+                scrollButton.style.display = 'none';
+            } else {
+                scrollButton.style.display = 'none';
+            }
+        });
+
+        function scrollPage() {
+            window.scrollBy({
+                top: window.innerHeight - 100,
+                behavior: 'smooth'
+            });
+        }
+
+
+    </script>
 </body>
 
 </html>
