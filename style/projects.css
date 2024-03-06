@@ -18,12 +18,16 @@
     margin-top: 20px;
     margin-bottom: 20px;
     font-size: 24px;
+    border-bottom: 2px solid rgb(198, 85, 212);
 }
 
 #projects-section p {
     font-size: 14px;
-    border-bottom: 1px solid #ccc;
-    color: grey;
+}
+
+#projects-section ul p {
+    margin-right: 20px;
+    max-width: 500px;
 }
 
 #projects-section p img {
@@ -94,4 +98,27 @@
 
 #contact-section button:hover {
     background-color: #764ba2;
+}
+
+.project-list ol {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+}
+
+.project-list li {
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 13px;
+    border: 2px solid rgb(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+
+
+.skills-used {
+    background-color: #e0e0e0;
+    padding: 7px;
+    margin-top: 10px;
+    width: auto;
 }
