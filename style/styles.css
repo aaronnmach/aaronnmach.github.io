@@ -58,6 +58,10 @@ header {
     z-index: 999;
 }
 
+header img {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
 h1 {
     color: black;
     text-transform: none;
