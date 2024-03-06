@@ -1,4 +1,5 @@
 /* CSS specific to the about.html page */
+
 #about-me-section {
     flex: 1;
     text-align: left;
@@ -18,6 +19,7 @@
 #about-me-section h2::after {
     width: 14%;
 }
+
 
 .about-main {
     margin-top: 40px;
