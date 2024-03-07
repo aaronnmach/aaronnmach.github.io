@@ -10,9 +10,19 @@
     <script src="typewriter.js" defer></script>
     <link rel="stylesheet" href="style/styles.css">
     <link rel="stylesheet" href="style/about.css">
+
 </head>
 
 <body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <!-- Update the href attribute to point to about.html -->
+            <li><a href="about.html">About</a></li>
+            <!-- Update the href attribute to point to portfolio.html -->
+            <li><a href="projects.html">Projects</a></li>
+        </ul>
+    </nav>
     <div class="icon-container">
         <a href="index.html" class="icon-link" id="home-icon">
             <img src="images/home1.jpeg" alt="Home Icon" class="icon-image">
@@ -83,6 +93,8 @@
                 behavior: 'smooth'
             });
         }
+
+        let slideIndex = 0;
     </script>
 </body>
 
