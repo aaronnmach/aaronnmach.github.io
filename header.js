@@ -1,7 +1,7 @@
 document.write(`
 <header>
     <div>
-        <img src="images/aaronnmach1.png" alt="Image Description" class="circular-border">
+        <img src="images/headshot1.jpg" alt="Image Description" class="square-border">
     </div>
     <div>
         <h1>Aaronn Mach</h1>
@@ -11,13 +11,13 @@ document.write(`
     </div>
     <div class="social-icons">
         <div class="image-wrapper" onmouseover="makeBigger(this)" onmouseout="makeNormal(this)">
-            <a href="https://www.linkedin.com/in/aaronn312487/" target="_blank">
+            <a href="https://www.linkedin.com/in/aaronnmach/" target="_blank">
                 <img src="images/linkedin.png" alt="LinkedIn Image">
             </a>
             <div class="overlay"></div>
         </div>
         <div class="image-wrapper" onmouseover="makeBigger(this)" onmouseout="makeNormal(this)">
-            <a href="https://github.com/amach8" target="_blank">
+            <a href="https://github.com/aaronnmach" target="_blank">
                 <img src="images/github.png" alt="Github Image">
             </a>
             <div class="overlay"></div>

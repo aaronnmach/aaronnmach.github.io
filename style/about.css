@@ -78,6 +78,11 @@
     }
 }
 
+#skill-label {
+    font-size: 18px;
+    font-weight: bold;
+}
+
 #scrollButton {
     position: fixed;
     top: 85%;
@@ -116,4 +121,34 @@
 
 .skill-box p {
     margin-bottom: 0;
+}
+
+.gallery-container {
+    position: relative;
+    width: 250px;
+    margin: auto;
+    text-align: center;
+}
+
+.gallery {
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+}
+
+.gallery-item {
+    display: none;
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+}
+
+.gallery-item.active {
+    display: block;
+}
+
+.gallery-nav {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
 }

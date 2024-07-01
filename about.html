@@ -17,9 +17,7 @@
     <nav>
         <ul>
             <li><a href="index.html">Home</a></li>
-            <!-- Update the href attribute to point to about.html -->
             <li><a href="about.html">About</a></li>
-            <!-- Update the href attribute to point to portfolio.html -->
             <li><a href="projects.html">Projects</a></li>
         </ul>
     </nav>
@@ -33,7 +31,11 @@
         <main class="about-main">
             <section id="about-me-section" class="content">
                 <section id="image-section" class="content1">
-                    <img src="images/aboutMeImage.jpg" alt="about me image" id="aboutImage">
+                    <div class="gallery-container">
+                        <div class="gallery">
+                            <img src="images/aboutMeImage1.jpg" alt="Image 2" class="gallery-item active">
+                        </div>
+                    </div>
                 </section>
                 <div>
                     <h2>About Me</h2>
@@ -61,17 +63,34 @@
             <section id="skills">
                 <h2> Skills</h2>
                 <div class="skill-box">
-                    <h3>Front-end Development</h3>
+                    <h3 id="skill-label">Front-end Development</h3>
                     <p>HTML, CSS, JavaScript</p>
                 </div>
                 <div class="skill-box">
-                    <h3>Back-end Development</h3>
-                    <p>C++, Java</p>
+                    <h3 id="skill-label">Back-end Development</h3>
+                    <p>C++, Python</p>
+                </div>
+                <div class="skill-box">
+                    <h3 id="skill-label">Frameworks</h3>
+                    <p>Pandas, SciKit, Seaborn</p>
+                </div>
+                <div class="skill-box">
+                    <h3 id="skill-label">Other</h3>
+                    <p>Git, Microsoft Suite</p>
                 </div>
             </section>
         </main>
     </div>
     <script>
+        let currentIndex = 0;
+        const images = document.querySelectorAll('.gallery-item');
+
+        function changeImage(n) {
+            images[currentIndex].classList.remove('active');
+            currentIndex = (currentIndex + n + images.length) % images.length;
+            images[currentIndex].classList.add('active');
+        }
+
         window.addEventListener('scroll', function () {
             var scrollButton = document.getElementById('scrollButton');
             var scrollHeight = document.documentElement.scrollHeight;

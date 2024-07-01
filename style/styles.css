@@ -43,7 +43,7 @@ body {
 }
 
 header {
-    background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background-image: linear-gradient(135deg, #667eea 0%, #453753 100%);
     color: #333;
     padding: 20px;
     height: 100vh;
@@ -60,16 +60,21 @@ header {
 
 header img {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    width: 150px;
+    height: auto;
+    border-radius: 15px;
 }
+
 
 h1 {
     color: black;
     text-transform: none;
-    font-size: 20px;
+    font-size: 30px;
     margin: 0;
     padding-bottom: 10px;
     font-weight: lighter;
     border-bottom: 2px solid #000;
+    padding-top: 30px;
 }
 
 h2 {
@@ -146,20 +151,18 @@ nav ul li a {
 nav ul li a::before {
     content: '';
     position: absolute;
-    bottom: -2px;
+    bottom: 0;
+    left: 0;
+    width: 0%;
     height: 2px;
+    background-color: #A29592;
     transition: width 0.3s ease;
 }
 
-nav ul li a:hover {
-    text-decoration: none;
-    color: #A29592;
-    position: relative;
-    padding: 10px 5px;
-    border: 2px solid #A29592;
-    border-radius: 5px;
-    margin: 0;
+nav ul li a:hover::before {
+    width: 100%;
 }
+
 
 main {
     flex-grow: 1;
