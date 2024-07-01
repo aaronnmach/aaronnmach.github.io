@@ -4,39 +4,111 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio | Home</title>
+    <title>Aaronn Mach | Home</title>
     <link href="https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <script src="header.js"></script>
-    <script src="typewriter.js" defer></script>
     <link rel="stylesheet" href="style/styles.css">
     <link rel="stylesheet" href="style/index.css">
+    <link rel="stylesheet" href="style/about.css">
     <link rel="icon" href="images/computer-science.ico" type="image/x-icon">
 </head>
 
 <body>
-    <nav>
+    <nav id="navbar">
         <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
+            <li><a href="#home-section">Home</a></li>
             <li><a href="projects.html">Projects</a></li>
             <li><a href="images/aaronnResume.pdf" download="images/aaronnResume.pdf">Resume</a></li>
         </ul>
     </nav>
+
     <main>
         <section id="home-section">
             <div class="content">
-                <h2>Hello, </h2>
-                <p>My name is Aaronn Mach, and I am an aspiring software engineer
-                    passionate about
-                    creating
-                    innovative solutions that make a positive impact. I am thrilled to share my journey, projects, and
-                    skills
-                    with you.
-                </p>
+                <h2>Hello,</h2>
+                <p>My name is Aaronn Mach, and I am an aspiring software engineer passionate about creating innovative
+                    solutions that make a positive impact. I am thrilled to share my journey, projects, and skills with
+                    you.</p>
+                <br><br><br>
+                <button class="scroll-button" onclick="scrollToAbout()">&darr;</button>
             </div>
         </section>
+
+        <!-- About Me Section -->
+        <section id="about-section" style="display: none;">
+            <h2>About Me</h2>
+            <div class="about-container">
+                <div class="left-container">
+                    <img src="images/aboutMeImage1.jpg" alt="About Me Image 1" class="about-image">
+                </div>
+                <div class="right-container">
+                    <p>Hello! I'm Aaronn Mach, currently pursuing a degree in Computer Science at the University of
+                        California, Riverside. My experience lies within both back-end and front-end development,
+                        however I am interested in topics such as cybersecurity, artificial intelligence, and machine
+                        learning as well.</p>
+                    <p>During my previous internships, I researched niche topics such as LLMs (Large Language Models),
+                        SEOs (Search Engine Optimization), and wafer map detection, exploring their potential
+                        applications in my daily life was extremely fascinating.</p>
+                    <p>I'm passionate about continual growth and am actively seeking internships and opportunities to
+                        expand my skill set. Don't hesitate to connect with me at <a
+                            href="mailto:aaronnmach@gmail.com">aaronnmach@gmail.com</a>!</p>
+                </div>
+
+            </div>
+            <section id="skills">
+                <h2>Skills</h2>
+                <div class="skill-box">
+                    <h3 id="skill-label">Front-end Development</h3>
+                    <p>HTML, CSS, JavaScript</p>
+                </div>
+                <div class="skill-box">
+                    <h3 id="skill-label">Back-end Development</h3>
+                    <p>C++, Python</p>
+                </div>
+                <div class="skill-box">
+                    <h3 id="skill-label">Frameworks</h3>
+                    <p>Pandas, SciKit, Seaborn</p>
+                </div>
+                <div class="skill-box">
+                    <h3 id="skill-label">Other</h3>
+                    <p>Git, Microsoft Suite, Scrum</p>
+                </div>
+            </section>
+        </section>
     </main>
+    <script>
+        window.addEventListener('scroll', function () {
+            var navbar = document.getElementById('navbar');
+            var homeSection = document.getElementById('home-section');
+
+            if (isElementInViewport(homeSection)) {
+                navbar.style.display = 'block';
+            } else {
+                navbar.style.display = 'none';
+            }
+
+        });
+        function scrollToAbout() {
+            document.querySelector('.scroll-button').style.display = 'none';
+
+            document.getElementById('about-section').style.display = 'block';
+
+            document.getElementById('about-section').scrollIntoView({
+                behavior: 'smooth'
+            });
+        }
+
+        function isElementInViewport(el) {
+            var rect = el.getBoundingClientRect();
+            return (
+                rect.top >= 0 &&
+                rect.left >= 0 &&
+                rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+                rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+            );
+        }
+    </script>
+
 </body>
 
 </html>

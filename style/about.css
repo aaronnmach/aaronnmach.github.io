@@ -14,6 +14,19 @@
     margin-bottom: 20px;
 }
 
+#skills-section {
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transform: translateX(-20px);
+    /* Start off-screen to the left */
+    animation: slideIn 1s forwards;
+    /* Apply animation */
+}
+
 #about-me-section h2::after {
     width: 14%;
 }
@@ -41,6 +54,69 @@
     color: grey;
 }
 
+/* Style for about section */
+.about-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 5%;
+}
+
+
+.left-container {
+    flex: 1;
+    text-align: left;
+    opacity: 0;
+
+    animation: slideInLeft 2s forwards;
+}
+
+.right-container {
+    flex: 2;
+    padding: 0 80px;
+    opacity: 0;
+    max-width: 100%;
+    animation: slideInRight 2s forwards;
+}
+
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.right-container p {
+    margin-bottom: 20px;
+}
+
+.about-image {
+    max-width: 100%;
+    /* Ensure image fits container */
+    height: auto;
+    /* Maintain aspect ratio */
+}
+
+/* Additional styling for skills section or other elements as needed */
+
+
 .sections-container {
     display: flex;
 }
@@ -57,52 +133,23 @@
     height: auto;
 }
 
-.content1 {
-    opacity: 0;
-    /* Initially hide the content */
-    animation: fadeIn 2s ease forwards;
-    /* Apply animation */
-}
-
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateX(-20px);
-    }
-
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
 #skill-label {
     font-size: 18px;
     font-weight: bold;
 }
 
-#scrollButton {
-    position: fixed;
-    top: 85%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: #A29592;
-    color: #FFFFFF;
-    border: none;
-    width: 50px;
-    height: 50px;
-    font-size: 24px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
-}
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-20px);
+        /* Start off-screen to the left */
+    }
 
-#scrollButton:hover {
-    background-color: #764ba2;
-}
-
-#skills h2::after {
-    width: 5%;
+    to {
+        opacity: 1;
+        transform: translateX(0);
+        /* Slide in to the center */
+    }
 }
 
 .skill-box {
@@ -121,32 +168,67 @@
     margin-bottom: 0;
 }
 
-.gallery-container {
-    position: relative;
-    width: 250px;
-    margin: auto;
-    text-align: center;
-}
 
-.gallery {
-    display: flex;
-    overflow: hidden;
-    justify-content: center;
-}
-
-.gallery-item {
-    display: none;
-    width: 100%;
-    height: auto;
-    border-radius: 15px;
-}
-
-.gallery-item.active {
+.scroll-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #9a1cad;
+    color: #fff;
+    border: none;
+    cursor: pointer;
     display: block;
+    margin: 0 auto;
+    margin-top: 100px;
+    width: 50px;
+    height: 50px;
+    transition: background-color 0.3s ease;
 }
 
-.gallery-nav {
-    display: flex;
-    justify-content: center;
-    margin-top: 10px;
+.scroll-button:hover {
+    background-color: #0056b3;
+}
+
+.scroll-button:focus {
+    outline: none;
+}
+
+.scroll-button:active {
+    transform: scale(0.95);
+}
+
+
+.scroll-button1 {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #9a1cad;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+    margin-top: 30px;
+    width: 50px;
+    height: 50px;
+    transition: background-color 0.3s ease;
+}
+
+.scroll-button1:hover {
+    background-color: #0056b3;
+}
+
+.scroll-button1:focus {
+    outline: none;
+}
+
+.scroll-button1:active {
+    transform: scale(0.95);
+}
+
+
+.scroll-button button:hover {
+    background-color: #0056b3;
+}
+
+.scroll-button1 button:hover {
+    background-color: #0056b3;
 }

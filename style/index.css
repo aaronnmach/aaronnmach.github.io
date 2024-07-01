@@ -5,6 +5,7 @@
     min-height: 80vh;
     margin: 0;
     padding: 0;
+    margin-top: 125px;
 }
 
 #home-section h2 {
@@ -17,4 +18,31 @@
 #home-section p {
     font-size: 21px;
     margin-left: 20px;
+    width: 80%;
+}
+
+/* Style for scroll button */
+.scroll-button {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    /* Adjust as needed */
+    text-decoration: none;
+    color: #333;
+}
+
+.scroll-button span {
+    font-size: 24px;
+}
+
+.scroll-button:hover {
+    text-decoration: none;
+    color: #555;
+}
+
+/* Adjustments for mobile */
+@media (max-width: 768px) {
+    .scroll-button {
+        margin-top: 10px;
+    }
 }
