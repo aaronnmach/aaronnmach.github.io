@@ -28,10 +28,8 @@ document.write(`
 
 function makeBigger(element) {
     element.querySelector('img').style.transform = 'scale(1.2)';
-    // Increase the scale of the image to 1.2 when hovered
 }
 
 function makeNormal(element) {
     element.querySelector('img').style.transform = 'scale(1)';
-    // Reset the scale of the image to 1 when not hovered
 }
