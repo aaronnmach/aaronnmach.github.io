@@ -22,9 +22,7 @@
     justify-content: center;
     opacity: 0;
     transform: translateX(-20px);
-    /* Start off-screen to the left */
     animation: slideIn 1s forwards;
-    /* Apply animation */
 }
 
 #about-me-section h2::after {
@@ -54,7 +52,6 @@
     color: grey;
 }
 
-/* Style for about section */
 .about-container {
     display: flex;
     flex-direction: row;
@@ -109,12 +106,9 @@
 
 .about-image {
     max-width: 100%;
-    /* Ensure image fits container */
     height: auto;
-    /* Maintain aspect ratio */
 }
 
-/* Additional styling for skills section or other elements as needed */
 
 
 .sections-container {
@@ -138,19 +132,6 @@
     font-weight: bold;
 }
 
-@keyframes slideIn {
-    from {
-        opacity: 0;
-        transform: translateX(-20px);
-        /* Start off-screen to the left */
-    }
-
-    to {
-        opacity: 1;
-        transform: translateX(0);
-        /* Slide in to the center */
-    }
-}
 
 .skill-box {
     background-color: #f0f0f0;
@@ -196,39 +177,6 @@
     transform: scale(0.95);
 }
 
-
-.scroll-button1 {
-    padding: 10px 20px;
-    font-size: 16px;
-    background-color: #9a1cad;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-    display: block;
-    margin: 0 auto;
-    margin-top: 30px;
-    width: 50px;
-    height: 50px;
-    transition: background-color 0.3s ease;
-}
-
-.scroll-button1:hover {
-    background-color: #0056b3;
-}
-
-.scroll-button1:focus {
-    outline: none;
-}
-
-.scroll-button1:active {
-    transform: scale(0.95);
-}
-
-
 .scroll-button button:hover {
-    background-color: #0056b3;
-}
-
-.scroll-button1 button:hover {
     background-color: #0056b3;
 }
