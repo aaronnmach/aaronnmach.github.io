@@ -1,10 +1,8 @@
 #about-me-section {
-    flex: 1;
-    text-align: left;
-    font-weight: lighter;
-    min-height: 80vh;
-    margin: 20px;
-    padding: 0;
+    display: grid;
+    place-items: center;
+    align-content: center;
+    min-height: 110vh;
 }
 
 #about-me-section h2 {
@@ -15,36 +13,14 @@
 }
 
 #skills-section {
-    min-height: 80vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    opacity: 0;
-    transform: translateX(-20px);
-    animation: slideIn 1s forwards;
+    display: grid;
+    place-items: center;
+    align-content: center;
+    min-height: 100vh;
 }
 
 #about-me-section h2::after {
     width: 14%;
-}
-
-
-.about-main {
-    margin-top: 40px;
-    max-width: 100%;
-}
-
-
-#about-me-section {
-    display: flex;
-    text-align: left;
-    font-weight: lighter;
-    justify-content: center;
-    align-items: center;
-    min-height: 80vh;
-    margin: 20px;
-    padding: 0;
 }
 
 #about-me-section p {
@@ -54,11 +30,9 @@
 
 .about-container {
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
     margin: 5%;
+    transition: all 2s;
 }
-
 
 .left-container {
     flex: 1;
@@ -105,16 +79,9 @@
 }
 
 .about-image {
-    max-width: 100%;
+    max-width: 80%;
     height: auto;
 }
-
-
-
-.sections-container {
-    display: flex;
-}
-
 
 #image-section {
     flex: 1;
@@ -123,7 +90,7 @@
 }
 
 #aboutImage {
-    width: 250px;
+    width: 100px;
     height: auto;
 }
 
@@ -133,7 +100,7 @@
 }
 
 
-.skill-box {
+.logo {
     background-color: #f0f0f0;
     padding: 20px;
     margin-bottom: 20px;
@@ -141,42 +108,50 @@
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.skill-box h3 {
+.logo h3 {
     margin-top: 0;
 }
 
-.skill-box p {
+.logo p {
     margin-bottom: 0;
 }
 
-
-.scroll-button {
-    padding: 10px 20px;
-    font-size: 16px;
-    background-color: #9a1cad;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-    display: block;
-    margin: 0 auto;
-    margin-top: 100px;
-    width: 50px;
-    height: 50px;
-    transition: background-color 0.3s ease;
+@media(prefer-reduced-motion) {
+    .section {
+        transition: none;
+    }
 }
 
-.scroll-button:hover {
-    background-color: #0056b3;
+.section {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 2s;
 }
 
-.scroll-button:focus {
-    outline: none;
+.show {
+    filter: blur(0);
+    transform: translateX(0);
+    opacity: 1;
 }
 
-.scroll-button:active {
-    transform: scale(0.95);
+.logos {
+    display: flex;
 }
 
-.scroll-button button:hover {
-    background-color: #0056b3;
+.logo {
+    margin-right: 40px;
+
+}
+
+.logo:nth-child(2) {
+    transition-delay: 200ms;
+}
+
+.logo:nth-child(3) {
+    transition-delay: 400s;
+}
+
+.logo:nth-child(4) {
+    transition-delay: 600ms;
 }
