@@ -7,15 +7,19 @@
     <title>Aaronn Mach | Home</title>
     <link href="https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nimbus+Sans:wght@400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style/styles.css">
     <link rel="stylesheet" href="style/index.css">
     <link rel="stylesheet" href="style/about.css">
-    <link rel="icon" href="images/computer-science.ico" type="image/x-icon">
+    <link rel="icon" href="images/Logo.png" type="image/png">
     <script defer src="app.js"> </script>
 </head>
 
 <body>
     <nav id="navbar">
+        <li class="left-item">
+            <a href="index.html">&rarr; &nbsp; aaronn</a>
+        </li>
         <ul>
             <li><a href="#home-section">Home</a></li>
             <li><a href="projects.html">Projects</a></li>
@@ -26,11 +30,16 @@
 
     <main>
         <section id="home-section">
-            <div class="content">
-                <h2>Hello,</h2>
-                <p>My name is Aaronn Mach, and I am an aspiring software engineer passionate about creating innovative
-                    solutions that make a positive impact. I am thrilled to share my journey, projects, and skills with
-                    you.</p>
+            <div class="content-container">
+                <div class="text-container">
+                    I'm Aaronn Mach, and I am an aspiring software engineer passionate about creating innovative
+                    solutions that make life easier.
+                </div>
+                <div class="image-container">
+                    <img src="images/vector.png" alt="Background Image" style="width: 500px; height:auto;">
+                    <div class="overlay"></div>
+                </div>
+            </div>
         </section>
 
         <!-- About Me Section -->
@@ -51,8 +60,18 @@
                     <p>I'm passionate about continual growth and am actively seeking internships and opportunities to
                         expand my skill set. Don't hesitate to connect with me at <a
                             href="mailto:aaronnmach@gmail.com">aaronnmach@gmail.com</a>!</p>
-                </div>
 
+                    <div class="image-wrapper" onmouseover="makeBigger(this)" onmouseout="makeNormal(this)">
+                        <a href="https://www.linkedin.com/in/aaronnmach/" target="_blank">
+                            <img src="images/linkedin.png" alt="LinkedIn Image">
+                        </a>
+                    </div>
+                    <div class="image-wrapper" onmouseover="makeBigger(this)" onmouseout="makeNormal(this)">
+                        <a href="https://github.com/aaronnmach" target="_blank">
+                            <img src="images/github.png" alt="Github Image">
+                        </a>
+                    </div>
+                </div>
             </div>
         </section>
         <section class="section">
@@ -77,29 +96,6 @@
             </div>
         </section>
     </main>
-    <script>
-        window.addEventListener('scroll', function () {
-            var navbar = document.getElementById('navbar');
-            var homeSection = document.getElementById('home-section');
-
-            if (isElementInViewport(homeSection)) {
-                navbar.style.display = 'block';
-            } else {
-                navbar.style.display = 'none';
-            }
-
-        });
-
-        function isElementInViewport(el) {
-            var rect = el.getBoundingClientRect();
-            return (
-                rect.top >= 0 &&
-                rect.left >= 0 &&
-                rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-                rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-            );
-        }
-    </script>
 </body>
 
 </html>
