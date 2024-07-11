@@ -95,22 +95,24 @@
         </section>
     </main>
     <script>
-        let lastScrollTop = 0;
-        const navbar = document.getElementById('navbar');
+        document.addEventListener('DOMContentLoaded', function () {
+            let lastScrollTop = 0;
+            const navbar = document.getElementById('navbar');
 
-        window.addEventListener('scroll', function () {
-            const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            window.addEventListener('scroll', function () {
+                let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
 
-            if (scrollTop > lastScrollTop) {
-                // Scroll down
-                navbar.classList.add('navbar-hidden');
-            } else {
-                // Scroll up
-                navbar.classList.remove('navbar-hidden');
-            }
-
-            lastScrollTop = scrollTop;
+                if (scrollTop === 0) {
+                    navbar.style.top = '0';
+                } else if (scrollTop > lastScrollTop) {
+                    navbar.style.top = '-100px';
+                } else {
+                    navbar.style.top = '0';
+                }
+                lastScrollTop = scrollTop;
+            });
         });
+
     </script>
 </body>
 
