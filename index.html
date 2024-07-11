@@ -97,6 +97,24 @@
             </div>
         </section>
     </main>
+    <script>
+        let lastScrollTop = 0;
+        const navbar = document.getElementById('navbar');
+
+        window.addEventListener('scroll', function () {
+            const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+            if (scrollTop > lastScrollTop) {
+                // Scroll down
+                navbar.classList.add('navbar-hidden');
+            } else {
+                // Scroll up
+                navbar.classList.remove('navbar-hidden');
+            }
+
+            lastScrollTop = scrollTop;
+        });
+    </script>
 </body>
 
 </html>

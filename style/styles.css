@@ -113,13 +113,21 @@ nav {
     right: 0;
     display: flex;
     justify-content: space-around;
-    align-items: center;
+    align-items: right;
     background-color: transparent;
     transition: width 0.3s ease;
     margin-top: 40px;
-    margin-right: 40px;
+    margin-bottom: 75px;
     z-index: 999;
     list-style-type: none;
+    transition: top 0.3s ease;
+    width: 95%;
+    height: 10%;
+    padding: 25px;
+}
+
+#navbar.navbar-hidden {
+    top: -120px;
 }
 
 main {
@@ -266,7 +274,7 @@ section {
 
 .left-item {
     position: absolute;
-    left: -425%;
+    left: 10%;
     font-size: 20px;
     font-family: 'Nimbus Sans', sans-serif;
 }
