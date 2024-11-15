@@ -93,6 +93,7 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
+    font-family: 'Poppins', sans-serif;
 }
 
 .project-item {
@@ -100,7 +101,11 @@
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
-    font-family: 'Nimbus Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
+
+.project-item h3 {
+    font-family: 'Poppins', sans-serif;
 }
 
 .project-item img {

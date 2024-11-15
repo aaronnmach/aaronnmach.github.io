@@ -1,4 +1,20 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
 /* Global styles */
+:root {
+    --header-height: 3rem;
+
+    /*======= Colors =======*/
+    /* Change Favorite color */
+    --hue-color: 240;
+
+    /*========= HSL Color mode =========*/
+    --first-color: hsl(var(--hue-color), 69%, 61%);
+    --first-color-second: hsl(var(--hue-color), 69%, 61%);
+    --first-color-alt: hsl(var(--hue-color), 57%, 53%);
+    --first-color-lighter: hsl(var(--hue-color), 92%, 85%);
+    --body-font: "Poppins", sans-serif;
+}
 
 @font-face {
     font-family: 'Ubuntu';
@@ -10,7 +26,7 @@
 .poster {
     font-size: 48px;
     font-weight: 700;
-    font-family: 'Nimbus Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 .rounded {
@@ -18,7 +34,7 @@
 }
 
 .sans-serif {
-    font-family: 'Nimbus Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 a {
@@ -28,7 +44,7 @@ a {
 
 body {
     display: flex;
-    font-family: 'Nimbus Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
     background-color: #F5F5F5;
@@ -91,7 +107,7 @@ h2::after {
 }
 
 h3 {
-    font-family: 'Nimbus Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 18px;
     font-weight: lighter;
     margin-top: 20px;
@@ -204,12 +220,18 @@ section {
     margin-right: 10px;
 }
 
-.image-wrapper img {
+.image-wrapper i {
     display: block;
     width: 30px;
     height: auto;
     justify-content: center;
     align-items: center;
+    font-size: 1.05rem;
+    color: var(--first-color);
+}
+
+.image-wrapper i:hover {
+    color: var(--first-color-lighter);
 }
 
 .content {
@@ -276,5 +298,5 @@ section {
     position: absolute;
     left: 10%;
     font-size: 20px;
-    font-family: 'Nimbus Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
