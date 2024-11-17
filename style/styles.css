@@ -68,7 +68,7 @@
 }
 
 .change-theme:hover {
-    color: var(--first-color);
+    color: var(--title-color);
 }
 
 .button {
