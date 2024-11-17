@@ -81,6 +81,11 @@
     font-weight: var(--font-medium);
 }
 
+.small-slash {
+    font-size: 0.8em;
+    /* Adjust this value as needed */
+}
+
 .button:hover {
     background-color: var(--first-color-alt);
 }

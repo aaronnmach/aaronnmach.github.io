@@ -2,6 +2,10 @@
     width: 14%;
 }
 
+#about-me-section h2 {
+    color: var(--first-color);
+}
+
 #about-me-section p {
     font-size: 14px;
     color: grey;
