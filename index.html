@@ -11,8 +11,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Nimbus+Sans:wght@400&display=swap" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.4/lottie.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.4/lottie.min.js"></script>
-    <link rel="stylesheet" href="style/styles.css">
     <link rel="stylesheet" href="style/index.css">
+    <link rel="stylesheet" href="style/styles.css">
     <link rel="stylesheet" href="style/about.css">
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css" />
     <link rel="icon" href="images/Logo.png" type="image/png">
@@ -33,16 +33,10 @@
     <main>
         <section id="home-section">
             <div class="content-container">
-                <div class="text-container">
-                    I'm <span class="highlight" id="dancing-word">Aaronn</span>, a software engineer passionate
-                    about innovative<br>
-                    solutions that make life easier.
-                </div>
-                <!--<div class="image-container">
-                    <img src="images/vector.png" alt="Background Image" style="width: 500px; height:auto;">
-                </div>-->
+                <p class="intro-paragraph">I'm <span class="highlight" id="dancing-word">Aaronn</span>, a software
+                    engineer passionate about innovative solutions that make life easier.</p>
                 <div class="image-container">
-                    <div id="robotic-animation" style="width: 400px; height: auto;"></div>
+                    <div id="robotic-animation"></div>
                 </div>
             </div>
         </section>
@@ -90,48 +84,7 @@
                 </div>
             </div>
         </section>
-        <!--<section class="section">
-            <h2>Skills</h2>
-            <div class="logos">
-                <div class="logo hidden">
-                    <h3 id="skill-label">Front-end Development</h3>
-                    <p>HTML, CSS, JavaScript</p>
-                </div>
-                <div class="logo hidden">
-                    <h3 id="skill-label">Back-end Development</h3>
-                    <p>C++, Python, Java, Rust</p>
-                </div>
-                <div class="logo hidden">
-                    <h3 id="skill-label">Frameworks</h3>
-                    <p>Pandas, SciKit, Seaborn, Spring Boot, Maven</p>
-                </div>
-                <div class="logo hidden">
-                    <h3 id="skill-label">Other</h3>
-                    <p>Git, Microsoft Suite, Agile Methodologies, GitHub Actions</p>
-                </div>
-            </div>
-        </section>-->
     </main>
-    <!--<script>
-        document.addEventListener('DOMContentLoaded', function () {
-            let lastScrollTop = 0;
-            const navbar = document.getElementById('navbar');
-
-            window.addEventListener('scroll', function () {
-                let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-
-                if (scrollTop === 0) {
-                    navbar.style.top = '0';
-                } else if (scrollTop > lastScrollTop) {
-                    navbar.style.top = '-100px';
-                } else {
-                    navbar.style.top = '0';
-                }
-                lastScrollTop = scrollTop;
-            });
-        });
-
-    </script>-->
     <script>
         var animation = lottie.loadAnimation({
             container: document.getElementById('robotic-animation'), // target container

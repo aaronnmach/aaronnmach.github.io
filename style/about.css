@@ -1,11 +1,3 @@
-#about-me-section h2::after {
-    width: 14%;
-}
-
-#about-me-section h2 {
-    color: var(--first-color);
-}
-
 #about-me-section p {
     font-size: 14px;
     color: grey;
@@ -20,41 +12,13 @@
 .left-container {
     flex: 1;
     text-align: left;
-    /*opacity: 0;*/
-    /*animation: slideInLeft 2s forwards;*/
 }
 
 .right-container {
     flex: 2;
     padding: 0 80px;
-    /*opacity: 0;*/
     max-width: 100%;
-    /*animation: slideInRight 2s forwards;*/
 }
-
-/*@keyframes slideInLeft {
-    from {
-        transform: translateX(-100%);
-        opacity: 0;
-    }
-
-    to {
-        transform: translateX(0);
-        opacity: 1;
-    }
-}
-
-@keyframes slideInRight {
-    from {
-        transform: translateX(100%);
-        opacity: 0;
-    }
-
-    to {
-        transform: translateX(0);
-        opacity: 1;
-    }
-}*/
 
 .right-container p {
     margin-bottom: 20px;
