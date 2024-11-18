@@ -139,10 +139,6 @@
         padding: 2rem 0.25rem 4rem;
     }
 
-    .navbar ul {
-        column-gap: 0;
-    }
-
     .text-container {
         width: 50%;
         height: auto;
