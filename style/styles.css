@@ -127,6 +127,12 @@
         grid-template-columns: repeat(2, 1fr);
     }
 
+    .name-container {
+        margin-top: 16px;
+        font-size: 20px;
+    }
+
+
 }
 
 @media screen and (max-width: 350px) {
@@ -135,14 +141,12 @@
         margin-right: var(--mb-1);
     }
 
-    .navbar {
-        padding: 2rem 0.25rem 4rem;
-    }
 
+    .content-container,
     .text-container {
         width: 50%;
         height: auto;
-        font-size: 10px;
+        font-size: 15px;
     }
 
 }
@@ -335,7 +339,7 @@ p {
 nav {
     position: fixed;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     margin-bottom: 75px;
     list-style-type: none;
     width: 100%;
@@ -359,11 +363,12 @@ nav ul {
     list-style-type: none;
     padding: 0px;
     display: flex;
+    position: fixed;
 }
 
 .name-container {
-    margin-right: 1000px;
-    margin-top: 20px;
+    margin-right: 1050px;
+    margin-top: 16px;
     font-size: 20px;
 }
 
