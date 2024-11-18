@@ -65,7 +65,6 @@
 
 #dancing-word {
     display: inline-block;
-    /* Ensures the element can be animated */
     animation: dance 2s infinite;
 }
 
