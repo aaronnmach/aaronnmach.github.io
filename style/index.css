@@ -50,6 +50,7 @@
     height: auto;
     object-fit: cover;
     z-index: 3;
+    margin-right: 50px;
 }
 
 .text-container {
@@ -60,6 +61,33 @@
     font-size: 40px;
     font-weight: lighter;
 }
+
+#dancing-word {
+    display: inline-block;
+    /* Ensures the element can be animated */
+    animation: dance 1s infinite;
+}
+
+@keyframes dance {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    25% {
+        transform: translateY(-10px);
+    }
+
+    50% {
+        transform: translateY(5px) rotate(5deg);
+    }
+
+    75% {
+        transform: translateY(-5px) rotate(-5deg);
+    }
+}
+
 
 .home__scroll {
     display: none;
